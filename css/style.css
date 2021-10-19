@@ -1,0 +1,124 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    outline: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+   list-style-type: none; 
+}
+
+img{
+    vertical-align: middle;
+}
+
+.clr{
+    clear: both;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* =============Menu Part css Start=============== */
+
+
+.menu ul li{
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+}
+
+.menu{
+    background-color: #ddd;
+    text-align: center;
+    line-height: 60px;
+}
+
+.menu ul li a{
+    color: black;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    transition: 0.4s;
+
+}
+
+.menu ul li a:hover{
+    background-color: black;
+    color: white;
+}
+
+.menu ul li ul{
+    position: absolute;
+    background-color: #ddd;
+    width: 300px;
+    left: 10px;
+    visibility: hidden;
+}
+
+.menu ul li:hover > ul{
+    visibility: visible;
+}
+
+
+.menu ul li ul li{
+    width: 100%;
+}
+
+.menu ul li ul li ul{
+    left: 100%;
+    top: 0;
+    position: absolute;
+}
+
+/* =============Menu Part css End=============== */
+
+#service{
+    padding-top: 20px;
+}
+
+.service-item{
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+.service-item:hover .service-overlay{
+    opacity: 1;
+    width: 100%;
+    
+}
+
+.service-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.service-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.service-text h1{
+    text-transform: uppercase;
+    color: white;
+}
+
+.service-item img{
+    width: 100%;
+}
